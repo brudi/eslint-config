@@ -1,7 +1,7 @@
 ## Install
 
 ```sh
-npm i @brudi/eslint-config-base
+npm i @brudi/eslint-config
 ```
 
 
@@ -12,7 +12,7 @@ module.exports = {
   'root': true,
   
   'extends': [
-    '@brudi/eslint-config-base'
+    '@brudi/eslint-config'
   ]
 };
 ```

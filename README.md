@@ -4,8 +4,10 @@ brudi Toolbox `.
 
 Base [Eslint shareable config](https://eslint.org/docs/developer-guide/shareable-configs) of brudi
 
-[![NPM](https://img.shields.io/npm/v/@brudi/eslint-config-brudi.svg)](https://www.npmjs.com/package/@brudi/eslint-config-brudi)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbrudi%2Feslint-config-brudi.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbrudi%2Feslint-config-brudi?ref=badge_shield)
+[![NPM](https://img.shields.io/npm/v/@brudi/eslint-config.svg)](https://www.npmjs.com/package/@brudi/eslint-config-brudi)
+[![NPM](https://img.shields.io/npm/v/@brudi/eslint-config.svg)](https://www.npmjs.com/package/@brudi/eslint-config-brudi)
+[![NPM](https://img.shields.io/npm/v/@brudi/eslint-config.svg)](https://www.npmjs.com/package/@brudi/eslint-config-brudi)
+[![NPM](https://img.shields.io/npm/v/@brudi/eslint-config.svg)](https://www.npmjs.com/package/@brudi/eslint-config-brudi)
 
 ## Installation
 
@@ -18,7 +20,7 @@ or
 `npm install --save-dev @brudi/eslint-config`
 
 
-## eslint Setup
+## ESLint Setup
 
 Now add the config to either the `package.json`:
 
@@ -75,7 +77,7 @@ Note: you can still overwrite the `env`, `globals` and `parser` in your local
 `.eslintrc.js`.
 
 ## License
-© brudi, 2019. Licensed under an
+© brudi, 2020. Licensed under an
 [Apache-2](https://github.com/brudi/brudi-hui/blob/master/LICENSE) license.
 
 
