@@ -81,6 +81,9 @@ Note: you can still overwrite the `env`, `globals` and `parser` in your local
 [Apache-2](https://github.com/brudi/brudi-hui/blob/master/LICENSE) license.
 
 
+## Attribution
 
+Originally forked from [NiGhTTraX/eslint-config](https://github.com/NiGhTTraX/eslint-config) 
+by [Andrei Picus](https://github.com/NiGhTTraX)
 
 

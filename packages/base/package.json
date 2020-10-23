@@ -9,8 +9,8 @@
     "eslint",
     "config"
   ],
-  "author": "Andrei Picus <brudi@users.noreply.github.com>",
-  "license": "MIT",
+  "author": "brudi <brudi@users.noreply.github.com>",
+  "license": "Apache-2",
   "main": "",
   "repository": {
     "type": "git",
