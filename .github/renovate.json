@@ -2,6 +2,7 @@
   "extends": [
     "@brudi"
   ],
+  "rangeStrategy": "replace",
   "schedule": [
     "at any time"
   ]
