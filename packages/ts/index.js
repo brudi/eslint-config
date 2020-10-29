@@ -11,7 +11,8 @@ module.exports = {
   'parser': '@typescript-eslint/parser',
 
   'plugins': [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'react-hooks',
   ],
 
   'settings': {
@@ -35,7 +36,11 @@ module.exports = {
     'no-useless-constructor': 0,
     'no-empty-function': ['error', {
       'allow': ['constructors']
-    }]
+    }],
+
+    // Warn for exhaustive-deps hooks only
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
 
   'overrides': [{
