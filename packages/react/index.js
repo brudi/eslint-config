@@ -6,13 +6,19 @@ module.exports = {
     'prettier/react'
   ]),
 
+  'plugins': ['react-hooks'],
+
   'rules': {
+    // Warn for exhaustive-deps hooks only
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     // Prefer types.
     'react/prop-types': 'off',
     'react/destructuring-assignment': 0,
     'react/jsx-filename-extension': ['error',
-      { 'extensions': ['.tsx', '.jsx']
-    }],
+      {
+        'extensions': ['.tsx', '.jsx']
+      }],
     'react/prefer-stateless-function': 0,
     'react/jsx-no-bind': 0,
     'react/sort-comp': [2, {

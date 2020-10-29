@@ -5,5 +5,11 @@
   "rangeStrategy": "replace",
   "schedule": [
     "at any time"
+  ],
+  "packageRules": [
+    {
+      "extends": "monorepo:typescript-eslint",
+      "groupName": "typescript-eslint monorepo"
+    }
   ]
 }
