@@ -5,7 +5,6 @@ on:
   push:
     branches:
     - next
-    - main
     - releases/*
 
   # weekly release schedule (Sunday at 22:00 (GMT+2))
