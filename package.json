@@ -14,7 +14,7 @@
     "lerna": "3.22.1",
     "@commitlint/config-conventional": "11.0.0",
     "commitlint": "11.0.0",
-    "devmoji": "2.1.10",
+    "devmoji": "2.1.11",
     "git-branch-is": "4.0.0",
     "husky": "4.3.0"
   },
