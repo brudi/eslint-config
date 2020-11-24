@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-ts@1.4.0...@brudi/eslint-config-ts@1.4.1) (2020-11-24)
+
+
+### Bug Fixes
+
+* **tsx:** 🐛 path to base ts rules ([a056c21](https://github.com/brudi/eslint-config/commit/a056c216fd0e75d06842ba7ff6078a6bc6c06049))
+
+
+
+
+
 # [1.4.0](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-ts@1.1.6...@brudi/eslint-config-ts@1.4.0) (2020-11-24)
 
 
