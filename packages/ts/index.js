@@ -1,4 +1,4 @@
-const testOverrides = require('@brudi/eslint-config/tests.js');
+const testOverrides = require('@brudi/eslint-config-base/tests.js');
 
 module.exports = {
   'extends': [
