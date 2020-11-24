@@ -19,7 +19,7 @@
     "url": "git+https://github.com/brudi/eslint-config.git"
   },
   "scripts": {
-    "test": "../../test.sh tdd-buffet tsx NiGhTTraX"
+    "test": "../../test.sh tdd-buffet tsx"
   },
   "dependencies": {
     "@brudi/eslint-config-react": "^1.1.3",
