@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-react@1.4.0...@brudi/eslint-config-react@2.0.0) (2021-05-17)
+
+
+### Bug Fixes
+
+* 🐛 test runner ([00f48a4](https://github.com/brudi/eslint-config/commit/00f48a4dd2cf67ca538570a805f2728279304ffc))
+* **deps:** update dependency eslint-plugin-react to ~7.23.0 ([b1dbd49](https://github.com/brudi/eslint-config/commit/b1dbd495fe1fa2debbbcd97e2193ce8e65d54e6c))
+
+
+### Code Refactoring
+
+* **react:** Use minor semver for plugins ([9992443](https://github.com/brudi/eslint-config/commit/9992443fa78660f5764727806d0df1c1da3316e0))
+
+
+### Features
+
+* **react:** Add react-hooks plugin ([dd5567d](https://github.com/brudi/eslint-config/commit/dd5567da914607b05fc497c6d5fe8d22e18d0e5c))
+* **react:** Disable require-default-props rule ([77758e5](https://github.com/brudi/eslint-config/commit/77758e5a7eaa886b018602bff5c7677f072186e1))
+
+
+### BREAKING CHANGES
+
+* **react:** This also updates the plugins and configs to their
+latest versions.
+* **react:** This could potentially introduce new lint errors.
+
+
+
+
+
 # [1.4.0](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-react@1.1.3...@brudi/eslint-config-react@1.4.0) (2020-11-24)
 
 

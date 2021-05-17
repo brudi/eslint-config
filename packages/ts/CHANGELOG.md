@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-ts@1.4.1...@brudi/eslint-config-ts@1.4.2) (2021-05-17)
+
+
+### Bug Fixes
+
+* 🐛 test runner ([00f48a4](https://github.com/brudi/eslint-config/commit/00f48a4dd2cf67ca538570a805f2728279304ffc))
+* **deps:** update dependency @typescript-eslint/eslint-plugin to ~4.16.0 ([b37bca5](https://github.com/brudi/eslint-config/commit/b37bca5ba217a4faed09f726622b2835b2e82e11))
+* **deps:** update dependency @typescript-eslint/parser to ~4.16.0 ([2cef740](https://github.com/brudi/eslint-config/commit/2cef74093b7b4f2c0579f4260aa9454e54eaca6b))
+* **deps:** update dependency eslint-import-resolver-typescript to ~2.4.0 ([65807d7](https://github.com/brudi/eslint-config/commit/65807d750abe14b88db67f7443e16559f0a2f6a3))
+* **deps:** update typescript-eslint monorepo to ~4.15.0 ([009d41f](https://github.com/brudi/eslint-config/commit/009d41f82719f85da9784b32b54b48dbe37dcc27))
+* **deps:** update typescript-eslint monorepo to ~4.17.0 ([d0878ad](https://github.com/brudi/eslint-config/commit/d0878ad1304da6c4b76462d86c7d95a6899eec19))
+* **deps:** update typescript-eslint monorepo to ~4.18.0 ([d8685aa](https://github.com/brudi/eslint-config/commit/d8685aa87e69c858b4cc705de64509b3c2e3026b))
+* **deps:** update typescript-eslint monorepo to ~4.19.0 ([4f612b0](https://github.com/brudi/eslint-config/commit/4f612b02074d7287b913167174ca10b49d6fdcb7))
+* **deps:** update typescript-eslint monorepo to ~4.20.0 ([b1c5a03](https://github.com/brudi/eslint-config/commit/b1c5a03a7cb48dd4a5d6ca3e39ef410cbbf72c8d))
+* **deps:** update typescript-eslint monorepo to ~4.21.0 ([b690953](https://github.com/brudi/eslint-config/commit/b690953cd8567918031c5dbc9a3a8b68f8a0caba))
+* **deps:** update typescript-eslint monorepo to ~4.22.0 ([c59aa04](https://github.com/brudi/eslint-config/commit/c59aa049fd258e539fe66b2a9fde137867e09c89))
+* **deps:** update typescript-eslint monorepo to ~4.23.0 ([0a387a9](https://github.com/brudi/eslint-config/commit/0a387a9899f42616a2f4fd425cff5f6f3de21227))
+* **ts:** Disable flaky no-redeclare core rule ([1fad70d](https://github.com/brudi/eslint-config/commit/1fad70dc60c5486cf03ea7a8b2a6efae813fafe6))
+* **ts:** Ignore unused rest siblings ([064e4bf](https://github.com/brudi/eslint-config/commit/064e4bf802d0182afc71885d3f5de598b75d96ba))
+* Install TS import resolver only for TS config ([675f6d3](https://github.com/brudi/eslint-config/commit/675f6d37484f82e99b1adfe7d35ee19c226b4f09))
+* **ts:** Turn off core rule in favor of TS one ([c3d26a6](https://github.com/brudi/eslint-config/commit/c3d26a6e3c58e86382f6ba9e02342c8bacbd50dc))
+* **ts:** Turn off core rule in favor of TS one ([51641cb](https://github.com/brudi/eslint-config/commit/51641cb07856bcbba8a42d28c61277e02c65920a))
+
+
+
+
+
 ## [1.4.1](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-ts@1.4.0...@brudi/eslint-config-ts@1.4.1) (2020-11-24)
 
 
