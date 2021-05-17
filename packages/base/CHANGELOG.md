@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-base@1.5.0...@brudi/eslint-config-base@2.0.1) (2021-05-17)
+
+**Note:** Version bump only for package @brudi/eslint-config-base
+
+
+
+
+
 # [1.5.0](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-base@1.4.0...@brudi/eslint-config-base@1.5.0) (2021-05-17)
 
 
