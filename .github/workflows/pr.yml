@@ -1,26 +1,34 @@
-name: Review
+name: Tests
 
 on:
+  push:
   pull_request:
-    paths-ignore:
-    - '**.md'
+    branches: [ $default-branch ]
 
 jobs:
-  test:
+  tests:
     runs-on: ubuntu-latest
-    name: Test against node 12
+
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
 
-    - uses: actions/checkout@v2
-
-    - name: Setup node
-      uses: actions/setup-node@v1
+    - name: Install Node
+      uses: actions/setup-node@v2
       with:
         node-version: 12
-        registry-url: 'https://registry.npmjs.org'
+
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.yarn
+        key: ${{ runner.OS }}-node-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.OS }}-node-
+          ${{ runner.OS }}-
 
     - name: Install dependencies
-      run: yarn
+      run: yarn --frozen-lockfile
 
     - name: Test
       run: yarn test
