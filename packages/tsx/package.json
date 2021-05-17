@@ -1,6 +1,6 @@
 {
   "name": "@brudi/eslint-config-tsx",
-  "version": "1.1.11",
+  "version": "2.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@brudi/eslint-config-react": "^2.0.0",
-    "@brudi/eslint-config-ts": "^1.4.2"
+    "@brudi/eslint-config-ts": "^2.0.0"
   },
   "peerDependencies": {
     "eslint": "^7.0.0"
