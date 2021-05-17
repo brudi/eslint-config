@@ -31,7 +31,7 @@ jobs:
         git config --global user.email brudi@brudi.com
         git config --global user.name brudi
 
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v2
       name: Setup node 12
       with:
         node-version: 12
