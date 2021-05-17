@@ -7,8 +7,9 @@
   "scripts": {
     "test": "lerna run test",
     "update-version": "lerna version --no-git-tag-version --no-push --force-publish '*'",
-    "publish:next": "lerna publish --canary --preid next --dist-tag next --yes",
-    "publish:production": "lerna publish --dist-tag latest --conventional-commits --create-release=github --yes"
+    "publish:next": "lerna publish --contents dist --canary preminor --preid next --dist-tag next --force-publish '*' --exact --no-push --yes",
+    "version:production": "lerna version --conventional-commits --no-changelog --no-git-tag-version --no-push --yes",
+    "publish:production": "lerna publish --dist-tag latest --conventional-commits --create-release github --yes"
   },
   "devDependencies": {
     "lerna": "~4.0.0",

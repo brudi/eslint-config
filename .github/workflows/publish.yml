@@ -28,7 +28,7 @@ jobs:
     - name: Setup git and ENV variables
       run: |
         git fetch --tags
-        git config --global user.email cloud@brudi.io
+        git config --global user.email brudi@brudi.com
         git config --global user.name brudi
 
     - uses: actions/setup-node@v1

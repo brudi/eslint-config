@@ -3,7 +3,7 @@
 
 PATH=$PATH:"$(dirname "$0")/../../node_modules/.bin/"
 
-if git-branch-is -r -q "main|^release/"; then
+if git-branch-is -r -q "main|next|^release/"; then
   echo "Skip commit message checks on protected branch"
   exit 0
 else
