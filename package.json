@@ -5,8 +5,6 @@
     "packages/*"
   ],
   "scripts": {
-    "pub": "lerna publish",
-    "bump": "lerna version",
     "test": "lerna run test",
     "update-version": "lerna version --no-git-tag-version --no-push --force-publish '*'",
     "publish:next": "lerna publish --canary --preid next --dist-tag next --yes",
@@ -14,16 +12,25 @@
   },
   "devDependencies": {
     "lerna": "~4.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "commitlint": "11.0.0",
-    "devmoji": "2.1.11",
+    "@commitlint/config-conventional": "12.1.4",
+    "commitiquette": "1.0.11",
+    "commitizen": "4.2.4",
+    "commitlint": "12.1.4",
+    "lint-staged": "11.0.0",
     "git-branch-is": "4.0.0",
-    "husky": "4.3.0"
+    "husky": "6.0.0"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "devmoji -e",
-      "commit-msg": "if git-branch-is --not -r \"main|next|^release/\"; then commitlint -E HUSKY_GIT_PARAMS; fi"
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix --ignore-path .lint-staged-ignore"
+    ],
+    "src/**/*.{md,json}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "commitiquette"
     }
   }
 }
