@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+PATH=$PATH:"$(dirname "$0")/../../node_modules/.bin/"
+
+if git-branch-is -r -q "main|^release/"; then
+  echo "Skip commit message checks on protected branch"
+  exit 0
+else
+  commitlint --edit $1;
+fi

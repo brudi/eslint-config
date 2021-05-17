@@ -1,53 +1,61 @@
 const testOverrides = require('@brudi/eslint-config-base/tests.js');
 
 module.exports = {
-  'extends': [
-    'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
-    'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    'prettier/@typescript-eslint', // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
-  ],
+  extends: ["@brudi/eslint-config-base"],
 
-  'parser': '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
 
-  'plugins': [
-    '@typescript-eslint',
-    'react-hooks',
-  ],
+  plugins: ["@typescript-eslint"],
 
-  'settings': {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
+  settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
-    'import/resolver': {
+    "import/resolver": {
       // use <root>/tsconfig.json
-      'typescript': {},
-    }
+      typescript: {},
+    },
   },
 
-  'rules': {
+  rules: {
     // ESLint doesn't understand interfaces yet and marks them as undefined.
-    'no-undef': 0,
+    "no-undef": "off",
+
+    // These core rules don't work well on TS code, use the ones from the plugin instead.
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "no-redeclare": "off",
 
     // This is noisy while refactoring.
-    '@typescript-eslint/no-unused-vars': 2,
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        // Allow `let { ignored, ...rest} = foo`.
+        ignoreRestSiblings: true,
+      },
+    ],
 
     // Allow `constructor(private foo: number) {}`
-    'no-useless-constructor': 0,
-    'no-empty-function': ['error', {
-      'allow': ['constructors']
-    }],
+    "no-useless-constructor": "off",
+    "no-empty-function": [
+      "error",
+      {
+        allow: ["constructors"],
+      },
+    ],
 
     // Warn for exhaustive-deps hooks only
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },
 
-  'overrides': [{
-    'files': testOverrides.files,
-    'rules': {
-      // Re-apply this override because we've customized the error above.
-      'no-empty-function': 0
-    }
-  }]
+  overrides: [
+    {
+      files: testOverrides.files,
+      rules: {
+        // Re-apply this override because we've customized the error above.
+        "no-empty-function": "off",
+      },
+    },
+  ],
 };
