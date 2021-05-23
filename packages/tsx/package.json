@@ -1,6 +1,6 @@
 {
   "name": "@brudi/eslint-config-tsx",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -22,8 +22,8 @@
     "test": "../../test.sh tdd-buffet tsx"
   },
   "dependencies": {
-    "@brudi/eslint-config-react": "^2.0.1",
-    "@brudi/eslint-config-ts": "^2.0.2"
+    "@brudi/eslint-config-react": "^2.0.2",
+    "@brudi/eslint-config-ts": "^2.0.3"
   },
   "peerDependencies": {
     "eslint": "^7.0.0"

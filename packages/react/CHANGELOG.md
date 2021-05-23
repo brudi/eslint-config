@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-react@2.0.0...@brudi/eslint-config-react@2.0.2) (2021-05-23)
+
+**Note:** Version bump only for package @brudi/eslint-config-react
+
+
+
+
+
 # [2.0.0](https://github.com/brudi/eslint-config/compare/@brudi/eslint-config-react@1.4.0...@brudi/eslint-config-react@2.0.0) (2021-05-17)
 
 
