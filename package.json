@@ -19,7 +19,7 @@
     "commitlint": "12.1.4",
     "lint-staged": "11.0.0",
     "git-branch-is": "4.0.0",
-    "husky": "6.0.0"
+    "husky": "7.0.1"
   },
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
